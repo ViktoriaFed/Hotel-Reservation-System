@@ -1,6 +1,6 @@
-# *Work in progress* 
-An attempt to build full stack website with Angular and Symfony REST API <br>
-Hotel reservation system
+
+**Simple Symfony REST API being displayed in Angular app**  <br>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
