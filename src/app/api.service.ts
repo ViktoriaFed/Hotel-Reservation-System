@@ -10,7 +10,7 @@ export class ApiService {
 
   private apiBaseUrl = 'http://127.0.0.1:8000';
   constructor(private http: HttpClient) { }
-  getData(): Observable<any> {
-    return this.http.get(`${this.apiBaseUrl}/api/todo`);
+  getData(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiBaseUrl}/api/room`);
   }
 }

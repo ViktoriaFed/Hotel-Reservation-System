@@ -1,13 +1,13 @@
 <div class="grid-container">
 
     <div class="card" *ngFor="let item of apiData">
-        <img src="{{ item.Image }}" alt="card-image">
+        <img src="{{ item?.image }}" alt="card-image">
         <div class="card-content">
-            <h3>{{ item.Name }}</h3>
-            <p>{{ item.Description }}</p>
-            <p id="price">Price: {{ item.Price }}</p><br>
-            <p *ngIf="item.FreeCancelation">Book with free cancelation!</p><br>
-            <p *ngIf="!item.FreeCancelation">No free cancelation available</p> <!--change that later-->
+            <h3>{{ item?.name }}</h3>
+            <p>{{ item?.description }}</p>
+            <p id="price">Price: {{ item.price }}</p><br>
+            <!--<p *ngIf="item.FreeCancelation">Book with free cancelation!</p><br>
+            <p *ngIf="!item.FreeCancelation">No free cancelation available</p>--> <!--change that later-->
 
         </div>
     </div>

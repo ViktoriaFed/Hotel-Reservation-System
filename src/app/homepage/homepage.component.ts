@@ -8,12 +8,13 @@ import { ApiService } from '../api.service';
 })
 export class HomepageComponent implements OnInit {
 
-  apiData: any;
+  apiData: any[] = [];
 
   constructor(private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.apiService.getData().subscribe((data) => {
+      console.log(data);
       this.apiData = data;
     });
   }
